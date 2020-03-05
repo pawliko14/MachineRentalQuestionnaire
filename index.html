@@ -1,0 +1,400 @@
+<html>
+ <head>
+ 
+   <link rel="stylesheet" href="styles.css">
+ 
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+ 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script type="text/javascript" src="functions.js"></script>
+	
+	
+
+	
+ </head>
+ 
+ 
+ <body>
+<div id="wrapper">
+<div id="wstep">
+  <h1>Ankieta Wypozyczalnia Maszyn</h1>
+  <p>Na podstawie wyniku ankiety, bedzie mozna podac orientacyjny czas</p>
+  <p>ktory trzeba bedzie przeznaczyc na napisanie,przetesotwanie i wdrożenie modułu</p>
+   <p>wypozyczalni maszyn w programie Microsoft Dynamics NAV </p>
+  
+    <h1>Jak to działa?</h1>
+	<p>Jesli jest zapotrzebowanie na ktorys podmoduł, oznacz go, pojawią się wtedy</p>
+	<p> bardziej szczegolowe podpunkty. Podane w poniższej ankiecie podpunkty </p>
+	<p> tworzą zarys skomplikowania procesu wypożyczania maszyn. </p>
+	<p> W przypadku chęci rozwinięcia zagadnienia z wybranego podmodułu, bądz</p>
+	<p> zapotrzebowania na nowa/inna funkcjonalność proszę o kontakt mailowy</p>
+
+</div>
+  <form id="quiz">
+  
+    <!-- Question 1 -->
+	<div id="1stQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('FirstPkt')" name="q1" value="c1">
+      Informacje o kliencie
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="FirstPkt" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			  Dane lokalizacji firmy, adres, kod pocztowy, kraj, waluta
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			  Dane firmy, NIP, wypłacalność przedsiębiorstwa(KRS), rodzaj dzialanosci
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c3">
+			  Informacje o poprzednich transakcjach, informacje prawne, umowy
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c4">
+			  rabat /znizka  ( dla stalego klienta)
+			</label><br />
+		</div>
+	</div>
+	
+		    <!-- Question 1,5 -->
+	<div id="1_5Question">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('halfPkt')" name="q1" value="c1">
+      Produkcja Maszyny
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="halfPkt" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			  dokumentacja techniczna ruchowa maszyny
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			  dokumentacja elementow maszyny oraz producentow podzespołów
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c3">
+			  spis materiałów, dokumentacja każdego elementu, badanie struktur, złożeń
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c5">
+			 technologia wytwarzania, procedury
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c6">
+			kontrola jakosci wykonanych elementow,podzespolow,zlożen, finalnego produktu
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c7">
+			 spis podwykonwaców elementów, zakupów 
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c8">
+			 Spis uruchomionych, trwajacych, zakonczonych podprojektów
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c9">
+			 Kalkulacja końcowa maszyny- zestawienie materialu i plac 
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c10">
+			 Ruchy miedzymagazynowe materialu, fiszki, magazynówki
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c10">
+			 kontrole pracownikow, czas pracy nad elementem, stan fiszek pracy
+			</label><br />
+		</div>
+	</div>
+	
+	    <!-- Question 2 -->
+	<div id="2stQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('SecondPkt')" name="q1" value="c1">
+      Jaka maszyna zostanie wypozyczona
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="SecondPkt" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			  dokumentacja techniczna ruchowa maszyny
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			  dokumentacja elementow maszyny oraz producentow podzespołów
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c3">
+			 czy maszyna byla wypozyczana, ostatni serwis, waznosc gwarancji, stan techniczny
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c4">
+			 dokumentacja czesci zamiennych
+			</label><br />
+		</div>
+	</div>
+	
+		    <!-- Question 3 -->
+	<div id="3dQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('ThirdPkt')" name="q1" value="c1">
+      Na jak dlugi okres bedzie wypozyczona
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="ThirdPkt" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			  okreslenie uslugi gwarancji
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			  okreslenie cykli serwisowych
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c3">
+			 okreslenie szybkosci reakcji serwisowych
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c4">
+			 okreslenie uslugi teleserwisu
+			</label><br />
+		</div>
+	</div>
+	
+			    <!-- Question 4 -->
+	<div id="4thQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('FourthPkt')" name="q1" value="c1">
+      Forma transportu maszyny DO klienta
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="FourthPkt" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			  Jesli klient jest regionalny okreslenie firmy kurierskiej i wartosc ubezpieczenia
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			  jesli klient zagraniczny okreslenie cła, i wymaganych dokumentow z kraju docelowego, okreslenie firmy kurierskiej
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c3">
+			 opcja załadunku i formy transportu(wodna, kolejowa,drogowa,lotnicza)
+			</label><br />
+		</div>
+	</div>
+	
+				    <!-- Question 5 -->
+	<div id="5thQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('FifthPkt')" name="q1" value="c1">
+      Transport maszyny DO klienta
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="FifthPkt" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			  dane firmy transportowej
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			  cena transportu, pokrycie kosztow, ubezpieczenie przesylki
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c3">
+			 dane kontakowe ubezpieczyciela, wartosc i warunki ubezpieczenia, dlugosc ubezpieczenia
+			</label><br />
+		</div>
+	</div>
+		
+		
+					    <!-- Question 6 -->
+	<div id="6thQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('SixthPkt')" name="q1" value="c1">
+      Forma platnosci
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="SixthPkt" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			  jaki termin platnosci
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			 jaka forma platnosci ( przelew, gotowka...)
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c3">
+			jaki % przedplaty
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c4">
+			Dane konta bankowego
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c5">
+			wystawione dokumenty( fv, proforma, zaliczkowa, koncowa, korygujaca)
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c6">
+			unikalny numer zamowienia klienta
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c7">
+			jaki podatek oraz procent
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c8">
+			okreslenie kary za nieterminową platność
+			</label><br />
+		</div>
+	</div>
+	
+					    <!-- Question 7 -->
+	<div id="7thQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('seventhPkt')" name="q1" value="c1">
+		Planowany termin odbioru maszyny u klienta
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="seventhPkt" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			  miejsce docelowe, orientacyjny czas
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			  dane pracownikow pracujacych przy odbiorze u klienta
+			</label><br />
+		</div>
+	</div>
+			
+			
+								    <!-- Question 8 -->
+	<div id="8thQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('eightPkt')" name="q1" value="c1">
+		Montaz u klienta
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="eightPkt" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			 Dane pracownikow firmy montujacych/uruchamiajacych maszyne
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			 Dane pracownikow, zaliczki na poczet wyjazdu, zabukowane noclegi, opcje transportowe
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c3">
+			transport pracownikow do klienta, samolot, jaki samochod, jaka wypozyczalnia
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c4">
+			 Raporty pracownikow z poczynionych prac oraz zgloszone usterki
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c5">
+			potwierdzenie odbioru maszyny przez klienta 
+			</label><br />
+		</div>
+	</div>
+		
+		
+										    <!-- Question 9 -->
+	<div id="9thQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('nineth')" name="q1" value="c1">
+		Odbiór maszyny OD klienta
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="nineth" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			 termin odbioru 
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			 pracownicy wyslani po odbior( dane zblizone do pkt 8)
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c3">
+			szacowany stopien zuzycia maszyny
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c4">
+			 okreslenie dodatkowych platnosci z powodu uszkodzen maszyny
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c5">
+			okreslenie firmy transportowej ( dane zblizone z punktow 4 i 5)
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c6">
+			potwierdzenie wyslania maszyny przez klienta i potwierdzenie nadania przez firme transportowa
+			</label><br />
+		</div>
+	</div>
+	
+						    <!-- Question 10 -->
+	<div id="10thQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('tenth')" name="q1" value="c1">
+		Analiza zniszczen i koszty napraw
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="tenth" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			  dokladna analiza maszyny, naprawy, modyfikacje, odnowione certyfikaty bezpieczenstwa
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			  okreslenie kosztow powiazanych z utrzymaniem / naprawa maszyny
+			</label><br />
+		</div>
+	</div>
+	
+							    <!-- Question 11 -->
+	<div id="11thQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('elft')" name="q1" value="c1">
+		Akcje serwisowe
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="elft" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			  wszelkie ruchy magazynowe PZ Wz i ceny materialow
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			   kiedy, jak dlugo, co sie wydarzylo, rozwiazanie problemu, analiza kosztu, sprawozdanie z napraw
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			   dokumentacja materialow wykorzystanych do napraw/serwisu 
+			</label><br />
+		</div>
+	</div>
+  
+  						    <!-- Question 12 -->
+	<div id="12thQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('zwolf')" name="q1" value="c1">
+		Podsumowanie zarobku na maszynie
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="zwolf" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			 ile przedsiebiorstwo zarobilo na danej maszynie
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			 okreslenie wydatkowe serwisowych, pracowniczych
+			</label><br />
+		</div>
+	</div>
+	
+	  						    <!-- Question 13 -->
+	<div id="13thQuestion">
+	   <h2><label><input type="checkbox" onclick="showFirstquestions('thirteenth')" name="q1" value="c1">
+		Moduł analizy wypożyczeń na podstawie zebranych infromacji z poprzednich wypozyczen 
+		</label><br /></h2>
+		<!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+		<!-- The value is which answer the choice corresponds to. -->
+		<div id="thirteenth" class ="WHquestions">
+			<label><input type="checkbox" name="q1" value="c1">
+			 okreslenie najbardziej oplacalnych maszyn 
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			 okreslenie 'najlepszego' klienta(najmniejsze zniszczenia, najmniej serwisow) w celu okreslenia znizek
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			 wycofanie nierentownych maszyn
+			</label><br />
+			<label><input type="checkbox" name="q1" value="c2">
+			 kondycje maszyn oraz schedule napraw i przyszlych wypozyczen, okreslenie opoznien
+			</label><br />
+		</div>
+	</div>
+    
+    <button type="button" id="submit" onclick="tabulateAnswers()">Podsumuj</button>
+	<button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+	<button type= "button" id= "selAll" onclick ="selectAll(this)">Zaznacz wszstko</button>
+	
+
+ 
+  
+  
+  <div id="answer">Wynik ankiety</div>
+  <button type= "button" id="download" onclick ="fun_down('hello.txt','This is the content of my file ')">pobierz dokument</button>
+
+</div>
+
+ <footer>
+  <p>Posted by: Konrad Pawlikowski</p>
+  <p>Contact information: <a href="mailto:pawliko14@gmail.com">
+	pawliko14@gmail.com</a>.</p>
+</footer> 
+
+</body>
+</html>
